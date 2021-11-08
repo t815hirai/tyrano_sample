@@ -1,46 +1,85 @@
 *start
 
-[title name="走るか寝るかするメロス"]
+[title name="風が吹けば人類滅亡"]
 [hidemenubutton]
 [wait time=200]
 [freeimage layer="base"]
 
-「走るか寝るかするメロス」[l][r]
+「風が吹けば人類滅亡」[l][r]
 
-メロスは激怒した。[l][r]
+風が吹けば桶屋が儲かる、という言葉がある。
+そして今、風が吹いて、それから紆余曲折あって
+人類が滅亡しようとしている。
+上手く導いて人類滅亡を阻止しよう！[l][r]
 
-必ず、かの邪智暴虐の王を除かねばならぬと決意した。[l][r]
+今、風が吹いた。次に何が起こる？[l][r]
 
-(中略)[l][r]
-
-ああ、何もかも、ばかばかしい。私は、醜い裏切り者だ。どうとも、勝手にするがよい。やんぬる哉。[l][r]
-メロスは...[l][r]
-
-[link target=*tag_sleep] →寝る [endlink][r]
-[link target=*tag_run] →走る [endlink][r]
+[link target=*tag_1A] →Aさんのカツラが飛んで行った [endlink][r]
+[link target=*tag_1B] →風力発電がとても盛んになる [endlink][r]
 [s]
 
-*tag_sleep
+*tag_1A
 
 [cm]
 
-[bg storage=sleep.jpg time=500]
+Aさんのカツラは飛んで行ってしまった。[l][r]
 
-メロスは死んだように深く眠った。[l][r]
-勇者は、ひどく赤面した。[r]
+Aさんはとても困っている。次に何が起こる？[l][r]
 
-【 BAD END 】[l][cm]
+[link target=*tag_2A] →Aさんの会社の社長に見つかる[endlink][r]
+[link target=*tag_2B] →Bさんがそのカツラを拾う [endlink][r]
+[s]
+
+*tag_2B
+
+[cm]
+
+Bさんはカツラを拾った。[l][r]
+
+さて、次にBさんはどうする？[l][r]
+
+[link target=*tag_3A] →Bさんはそのカツラを貰った [endlink][r]
+[link target=*tag_3B] → Bさんはそのカツラを投げ捨てた[endlink][r]
+[s]
+
+*tag_3A
+
+[cm]
+Bさんはカツラを貰って幸せになった。[l][r]
+その後もなんだかんだ人類は幸せに存続していったとさ......[r]
+
+【 人類存続！！！ 】[l][cm]
 
 [jump target=*start]
 
-*tag_run
-
-[bg storage=run.jpg time=500]
+*tag_3B
 
 [cm]
-メロスは黒い風のように走った。[l][r]
-陽は、ゆらゆら地平線に没し、まさに最後の一片の残光も、消えようとした時、メロスは疾風の如く刑場に突入した。間に合った。[r]
+Bさんが投げ捨てたカツラの行方は...[l][r]
+その後なんだかんだあって人類は滅亡した。[r]
 
-【 GOOD END 】[l][cm]
+【 人類滅亡 】[l][cm]
+
+[jump target=*start]
+
+*tag_2A
+
+[cm]
+Aさんの会社の社長はなんと宇宙人だった...！[l][r]
+その宇宙人はAさんがカツラをかぶっていたことにとてもびっくりして
+緊急事態ボタンを押してしまった！[l][r]
+宇宙人が大勢で攻めてきて人類は敗れた。[r]
+
+【 人類滅亡 】[l][cm]
+
+[jump target=*start]
+
+*tag_1B
+
+[cm]
+風力発電以外の発電所が取り壊された後、全く風が吹かなくなった。[l][r]
+電力が一切無くなり電力ありきの生活に慣れた人類は疲れ果てた。[r]
+
+【 人類滅亡 】[l][cm]
 
 [jump target=*start]
